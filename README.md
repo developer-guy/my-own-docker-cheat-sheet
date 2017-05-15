@@ -39,6 +39,7 @@ _**17 - docker push image_name --> Belirtilen image_name'e sahip Imageyi Dockerh
 _**18 - docker logs container_id --> detached modda çalıştırılan yani çıktıları console attach edilmeyen conttainerlerin loglarını izlemeye yarar.**_
 
 ##DOCKER COMPOSE CHEAT SHEET##
+
 _**1 - docker-compose build veya docker-compose build service_name --> İlgili service'i build eder.**_
 
 _**2 - docker-compose up --> docker-compose.yml içerisindeki tüm servisleri teker teker ayağa kaldırır.--no-recreate veya --force-recreate parametreleri ile kullanılabilir.
