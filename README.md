@@ -20,39 +20,39 @@ _**8 - docker inspect --format="{{.Id}}" contanier_name --> Belitilen contaner i
 
 _**9 - docker rm container_id --> Belirtilen container_id'ye sahip containerı siler.Eğer -f(force) parametresi ile kullanılırsa çalışır haldeki bir container durdurulmaya zorlanarak silinir.**_
 
-10 - docker stop container_id --> Belirtilen container_id'ye sahip containerı durdurur.
+_**10 - docker stop container_id --> Belirtilen container_id'ye sahip containerı durdurur.**_
 
-11 - docker exec -it container_id /bin/bash --> container_id'si belirtilen containerı terminalde açar.
+_**11 - docker exec -it container_id /bin/bash --> container_id'si belirtilen containerı terminalde açar.**_
 
-12 - docker kill container_id --> container_id'si belirtilen containerı acil çıkışa zorlar.
+_**12 - docker kill container_id --> container_id'si belirtilen containerı acil çıkışa zorlar.**_
 
-13 - docker logs -f container_id -> ontainer_id'si belirtilen containerın çıktılarını dinler.-f(follow)
+_**13 - docker logs -f container_id -> ontainer_id'si belirtilen containerın çıktılarını dinler.-f(follow)**_
 
-14 - docker build docker_file_path --> Belitilen yol içerisindeki DockerFile'dan yeni bir image build eder.Dockerfile'dan image build edilirken bir tag'e sahip olması istenirse -t parametresi kullanılabilir.
+_**14 - docker build docker_file_path --> Belitilen yol içerisindeki DockerFile'dan yeni bir image build eder.Dockerfile'dan image build edilirken bir tag'e sahip olması istenirse -t parametresi kullanılabilir.**_
 
-15 - docker tag image_id tag_name:tag_version --> Belirtilen image_id'ye sahip olan image'nın belirtlen tag ismine ve versiyonuna sahip olmasını sağlar.
+_**15 - docker tag image_id tag_name:tag_version --> Belirtilen image_id'ye sahip olan image'nın belirtlen tag ismine ve versiyonuna sahip olmasını sağlar.**_
 
-16 - docker login --> Komutunu çalıştırdıktan sonra girilen kimlik bilgileri ile Dockerhub'a erişim sağlanır.
+_**16 - docker login --> Komutunu çalıştırdıktan sonra girilen kimlik bilgileri ile Dockerhub'a erişim sağlanır.**_
 
-17 - docker push image_name --> Belirtilen image_name'e sahip Imageyi Dockerhub'a gönderir.
+_**17 - docker push image_name --> Belirtilen image_name'e sahip Imageyi Dockerhub'a gönderir.**_
 
-18 - docker logs container_id --> detached modda çalıştırılan yani çıktıları console attach edilmeyen conttainerlerin loglarını izlemeye yarar.
+_**18 - docker logs container_id --> detached modda çalıştırılan yani çıktıları console attach edilmeyen conttainerlerin loglarını izlemeye yarar.**_
 
 ##DOCKER COMPOSE CHEAT SHEET##
-1 - docker-compose build veya docker-compose build service_name --> İlgili service'i build eder.
+_**1 - docker-compose build veya docker-compose build service_name --> İlgili service'i build eder.**_
 
-2 - docker-compose up --> docker-compose.yml içerisindeki tüm servisleri teker teker ayağa kaldırır.--no-recreate veya --force-recreate parametreleri ile kullanılabilir.
---no-recreate parametresi ilgili servislerin yeniden ayağa kalkarken build edilmesini engeller,--force-recreate ise her seferinde servis ayağa kaldırılırken build edilmesini zorunlu kılar.
+_**2 - docker-compose up --> docker-compose.yml içerisindeki tüm servisleri teker teker ayağa kaldırır.--no-recreate veya --force-recreate parametreleri ile kullanılabilir.
+--no-recreate parametresi ilgili servislerin yeniden ayağa kalkarken build edilmesini engeller,--force-recreate ise her seferinde servis ayağa kaldırılırken build edilmesini zorunlu kılar.**_
 
-3 - docker-compose ps --> docker-compose tarafından çalıştırılan servisleri listeler.
+_**3 - docker-compose ps --> docker-compose tarafından çalıştırılan servisleri listeler.**_
 
-4 - docker-compose down --> docker-compose tarafından çalıştırılan servisleri siler.
+_**4 - docker-compose down --> docker-compose tarafından çalıştırılan servisleri siler.**_
 
-5 - docker-compose run --> docker-compose.yml dosyası içerisinde belirtilen bir servis ile belirtilen diğer bir servis arasında komutsal işlemleri gerçekleştirir.docker-compose dosyada belirtilen her bir servisin 
-birbirileriyle servis isimleri üzerinde haberleşmelerini sağlamak üzere tüm networking ayarlarını yapar.
+_**5 - docker-compose run --> docker-compose.yml dosyası içerisinde belirtilen bir servis ile belirtilen diğer bir servis arasında komutsal işlemleri gerçekleştirir.docker-compose dosyada belirtilen her bir servisin 
+birbirileriyle servis isimleri üzerinde haberleşmelerini sağlamak üzere tüm networking ayarlarını yapar.**_
 
-6 - docker-compose start --> docker-compose.yml içerisinde belirtilen servislerin bir veya bir kaçını başlatmaya yarar aynı işi docker-compose up service_name ile de yapılabilir.
+_**6 - docker-compose start --> docker-compose.yml içerisinde belirtilen servislerin bir veya bir kaçını başlatmaya yarar aynı işi docker-compose up service_name ile de yapılabilir.**_
 
-7 - docker-compose stop --> docker-compose.yml içerisinde belirtilen servislerin bir veya bir kaçını durdurmaya yarar.
+_**7 - docker-compose stop --> docker-compose.yml içerisinde belirtilen servislerin bir veya bir kaçını durdurmaya yarar.**_
 
-8 - docker-compose exec --> Çalışan bir servis içerisinde işlem yapabilmeyi sağlar.**
+_**8 - docker-compose exec --> Çalışan bir servis içerisinde işlem yapabilmeyi sağlar.**_
